@@ -1,38 +1,105 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dalia Alfaghal - CV</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+        /* Resetting margin and padding */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2, h3 {
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
             color: #333;
         }
+
+        /* Header section */
+        header {
+            background-color: #4CAF50; /* Green color */
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Container for main content */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 20px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+        }
+
         ul {
-            list-style-type: disc;
             margin-left: 20px;
         }
-        p {
-            line-height: 1.6;
+
+        /* Footer section */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Links */
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Styling buttons if needed */
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
@@ -42,6 +109,7 @@
         <p>AI Program Manager | Product Manager | Data Strategist</p>
         <p>Email: <a href="mailto:dalia.alfaghal@gmail.com">dalia.alfaghal@gmail.com</a></p>
     </header>
+
     <div class="container">
         <!-- About Me Section -->
         <section>
@@ -77,39 +145,6 @@
                 <li>Developed and executed product strategies to increase revenue using OKRs and KPIs.</li>
                 <li>Collaborated with cross-functional teams to enhance product design and user experience.</li>
                 <li>Provided Agile and Scrum coaching to optimize team performance and efficiency.</li>
-            </ul>
-
-            <h3>Product Manager - Betao (Feb 2020 - Feb 2021)</h3>
-            <ul>
-                <li>Led product vision and strategy for a portfolio, resulting in a 20% increase in customer engagement.</li>
-                <li>Defined product requirements and worked closely with engineering teams to meet deadlines.</li>
-                <li>Developed and deployed enhanced product features optimized for marketing strategies.</li>
-            </ul>
-
-            <h3>Community Lead - Facebook (Meta) (Jun 2019 - Feb 2020)</h3>
-            <ul>
-                <li>Developed engaging activities for the developer community to foster interest.</li>
-                <li>Created workshops on web development, machine learning, and quantum computing.</li>
-                <li>Facilitated events and networked with industry leaders to enhance community connections.</li>
-            </ul>
-
-            <h3>Growth Hacker - Doktor.se (Oct 2018 - Jun 2020)</h3>
-            <ul>
-                <li>Increased website traffic by 20% through diverse marketing tactics, including SEO and social media.</li>
-                <li>Generated over 1,000,000 Kr. in revenue through digital marketing channels like paid search.</li>
-                <li>Acquired and retained over 1,000 customers through email marketing and lead generation.</li>
-            </ul>
-
-            <h3>Product Development Manager - SAP (Jun 2017 - Dec 2017)</h3>
-            <ul>
-                <li>Analyzed consumer and financial data to develop strategic insights and recommendations.</li>
-                <li>Supported the identification of category innovations and guided them from concept to consumer.</li>
-            </ul>
-
-            <h3>Data Analyst - SAP Co-Innovation Lab (Jan 2016 - May 2017)</h3>
-            <ul>
-                <li>Reviewed 10 years of data from SAP pipelines and integrated them with project data.</li>
-                <li>Analyzed and visualized data using Scala to uncover insights and trends.</li>
             </ul>
         </section>
 
@@ -151,5 +186,10 @@
             </ul>
         </section>
     </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 Dalia Alfaghal | All Rights Reserved</p>
+    </footer>
 </body>
 </html>
