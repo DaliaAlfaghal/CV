@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dalia Alfaghal - CV</title>
+    <title>Dalia Alfaghal - Interactive CV</title>
+    <!-- Include Google Fonts for better typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <style>
         /* Resetting margin and padding */
         * {
@@ -14,21 +18,23 @@
 
         /* Body styling */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Roboto', sans-serif;
             background-color: #f4f4f4;
             color: #333;
+            line-height: 1.6;
         }
 
         /* Header section */
         header {
-            background-color: #4CAF50; /* Green color */
+            background: linear-gradient(to right, #4CAF50, #3E8E41);
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
-            font-size: 3em;
+            font-size: 3.2em;
             margin-bottom: 10px;
         }
 
@@ -36,12 +42,19 @@
             font-size: 1.2em;
         }
 
+        /* Email styling */
+        header a {
+            color: white;
+            font-size: 1.2em;
+            text-decoration: underline;
+        }
+
         /* Container for main content */
         .container {
             max-width: 900px;
             margin: 40px auto;
             background-color: #fff;
-            padding: 20px;
+            padding: 30px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
@@ -51,11 +64,13 @@
             margin-bottom: 10px;
             border-bottom: 2px solid #4CAF50;
             padding-bottom: 5px;
+            font-weight: 500;
         }
 
         h3 {
             color: #333;
             margin-top: 20px;
+            font-weight: 500;
         }
 
         p, ul {
@@ -64,6 +79,40 @@
 
         ul {
             margin-left: 20px;
+        }
+
+        /* Expanding sections */
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f4f4f4;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .job-header:hover {
+            background-color: #e2e2e2;
+        }
+
+        .job-details {
+            display: none;
+            padding: 10px;
+            border-left: 2px solid #4CAF50;
+            margin-left: 10px;
+            animation: slide-down 0.3s ease;
+        }
+
+        @keyframes slide-down {
+            from {
+                height: 0;
+                opacity: 0;
+            }
+            to {
+                height: auto;
+                opacity: 1;
+            }
         }
 
         /* Footer section */
@@ -87,20 +136,11 @@
             text-decoration: underline;
         }
 
-        /* Styling buttons if needed */
-        .btn {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            text-transform: uppercase;
-            cursor: pointer;
+        .icon-section {
+            margin-right: 10px;
+            color: #4CAF50;
         }
 
-        .btn:hover {
-            background-color: #45a049;
-        }
     </style>
 </head>
 <body>
@@ -113,57 +153,147 @@
     <div class="container">
         <!-- About Me Section -->
         <section>
-            <h2>About Me</h2>
+            <h2><i class="fas fa-user icon-section"></i>About Me</h2>
             <p>Email: <a href="mailto:dalia.alfaghal@gmail.com">dalia.alfaghal@gmail.com</a></p>
         </section>
 
         <!-- Work Experience Section -->
         <section>
-            <h2>Work Experience</h2>
+            <h2><i class="fas fa-briefcase icon-section"></i>Work Experience</h2>
 
-            <h3>AI Program Manager - Mozilla Foundation (May 2024 - Present)</h3>
-            <ul>
-                <li>Spearhead AI360 projects, ensuring alignment with organizational priorities.</li>
-                <li>Manage AI inventory and database for better team collaboration and project tracking.</li>
-                <li>Coordinate activities across the AI360 portfolio, developing systems to evaluate program impact.</li>
-                <li>Organize public events and build partnerships with stakeholders to foster a trustworthy AI community.</li>
-                <li>Oversee budget expenditures across projects, ensuring alignment with strategic objectives.</li>
-            </ul>
+            <!-- AI Program Manager -->
+            <div class="job-header">
+                <h3>AI Program Manager - Mozilla Foundation (May 2024 - Present)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Spearhead AI360 projects, ensuring alignment with organizational priorities.</li>
+                    <li>Manage AI inventory and database for better team collaboration and project tracking.</li>
+                    <li>Coordinate activities across the AI360 portfolio, developing systems to evaluate program impact.</li>
+                    <li>Organize public events and build partnerships with stakeholders to foster a trustworthy AI community.</li>
+                    <li>Oversee budget expenditures across projects, ensuring alignment with strategic objectives.</li>
+                </ul>
+            </div>
 
-            <h3>Product Manager - Culcha (Nov 2021 - Jan 2023)</h3>
-            <ul>
-                <li>Defined product vision and roadmap for leadership education programs.</li>
-                <li>Conducted in-depth market research to identify industry trends and customer needs.</li>
-                <li>Collaborated with experts to design leadership education curricula.</li>
-                <li>Worked with cross-functional teams to ensure seamless product launches.</li>
-                <li>Monitored KPIs to assess the success of leadership education products.</li>
-            </ul>
+            <!-- Product Manager - Culcha -->
+            <div class="job-header">
+                <h3>Product Manager - Culcha (Nov 2021 - Jan 2023)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Defined product vision and roadmap for leadership education programs.</li>
+                    <li>Collaborated with marketing, sales, and technical teams for seamless product launches.</li>
+                    <li>Developed curriculum for leadership education, tailored to organizational needs.</li>
+                    <li>Monitored KPIs to assess the success of leadership education products.</li>
+                </ul>
+            </div>
 
-            <h3>Product Consultant - Self-employed (Feb 2021 - Present)</h3>
-            <ul>
-                <li>Designed and implemented products that resulted in a 2% market share increase for a major retailer.</li>
-                <li>Developed and executed product strategies to increase revenue using OKRs and KPIs.</li>
-                <li>Collaborated with cross-functional teams to enhance product design and user experience.</li>
-                <li>Provided Agile and Scrum coaching to optimize team performance and efficiency.</li>
-            </ul>
+            <!-- Product Consultant -->
+            <div class="job-header">
+                <h3>Product Consultant - Self-employed (Feb 2021 - Present)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Designed a product for a global furniture retailer, boosting market share by 2%.</li>
+                    <li>Developed product strategies for startups, improving customer engagement by 20%.</li>
+                    <li>Provided Agile and Scrum coaching, reorganizing teams for better performance.</li>
+                    <li>Worked directly with stakeholders and customers to gather valuable insights.</li>
+                </ul>
+            </div>
+
+            <!-- Product Manager - Betao -->
+            <div class="job-header">
+                <h3>Product Manager - Betao (Feb 2020 - Feb 2021)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Led product strategy, resulting in a 20% increase in customer engagement.</li>
+                    <li>Collaborated with engineering teams, ensuring products met deadlines and quality standards.</li>
+                    <li>Optimized product features for marketing, leading to 30% annual growth.</li>
+                </ul>
+            </div>
+
+            <!-- Community Lead - Facebook -->
+            <div class="job-header">
+                <h3>Community Lead - Facebook (Meta) (Jun 2019 - Feb 2020)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Developed and facilitated events for over 3,000 developers globally.</li>
+                    <li>Created workshops on web development, machine learning, and quantum computing.</li>
+                    <li>Expanded the developer community through outreach and engagement strategies.</li>
+                </ul>
+            </div>
+
+            <!-- Growth Hacker - Doktor.se -->
+            <div class="job-header">
+                <h3>Growth Hacker - Doktor.se (Oct 2018 - Jun 2020)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Increased website traffic by 20% through SEO and social media campaigns.</li>
+                    <li>Generated over 1M Kr in revenue via digital marketing campaigns.</li>
+                    <li>Acquired 1,000+ customers using email marketing and lead generation techniques.</li>
+                </ul>
+            </div>
+
+            <!-- Product Development Manager - SAP -->
+            <div class="job-header">
+                <h3>Product Development Manager - SAP (Jun 2017 - Dec 2017)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Developed business growth strategies based on consumer and financial data analysis.</li>
+                    <li>Launched a portfolio of networking projects critical to SAP Cloud Operations.</li>
+                    <li>Executed go-to-market plans, ensuring successful product launches.</li>
+                </ul>
+            </div>
+
+            <!-- Data Analyst - SAP Co-Innovation Lab -->
+            <div class="job-header">
+                <h3>Data Analyst - SAP Co-Innovation Lab (Jan 2016 - May 2017)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Reviewed 10 years’ worth of SAP data and integrated it with project pipelines.</li>
+                    <li>Used Scala Design to visualize data, identifying key trends and insights.</li>
+                </ul>
+            </div>
+
+            <!-- Data Analyst Intern - Daresay -->
+            <div class="job-header">
+                <h3>Data Analyst Intern - Daresay (Sept 2016 - Nov 2016)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Managed Google Analytics to improve data accuracy and reporting.</li>
+                    <li>Integrated analytics solutions to improve tracking for business strategies.</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Education Section -->
         <section>
-            <h2>Education</h2>
+            <h2><i class="fas fa-graduation-cap icon-section"></i>Education</h2>
             <h3>MBA: Digital Data Strategist - Hyper Island (2015 - 2017)</h3>
-            <p>Graduated with skills in data strategy, business transformation, and innovation.</p>
+            <p>Focused on data strategy, business transformation, and innovation.</p>
 
             <h3>Bachelor's Degree in Physics of Telecommunications - Cairo University (2006 - 2010)</h3>
-            <p>Focused on telecommunications and data analysis techniques.</p>
-
-            <h3>Machine Learning Foundation - Duke University (2023)</h3>
-            <p>Completed coursework in machine learning foundations and AI project management.</p>
+            <p>Developed skills in telecommunications and data analysis techniques.</p>
         </section>
 
         <!-- Digital Skills Section -->
-        <section>
-            <h2>Digital Skills</h2>
+        <section class="skills">
+            <h2><i class="fas fa-laptop-code icon-section"></i>Digital Skills</h2>
             <ul>
                 <li>AI Product Management</li>
                 <li>Data Protection and GDPR</li>
@@ -172,12 +302,15 @@
                 <li>Agile (Scrum), Jira, Kanban</li>
                 <li>SQL, REST APIs</li>
                 <li>Sketch, Figma</li>
+                <li>Machine Learning & AI Systems Design</li>
+                <li>Big Data & Cloud Technologies</li>
+                <li>Data Visualization Tools (Tableau, Power BI)</li>
             </ul>
         </section>
 
         <!-- Languages Section -->
         <section>
-            <h2>Languages</h2>
+            <h2><i class="fas fa-language icon-section"></i>Languages</h2>
             <ul>
                 <li>Arabic (Native)</li>
                 <li>English (Proficient)</li>
@@ -191,5 +324,29 @@
     <footer>
         <p>© 2024 Dalia Alfaghal | All Rights Reserved</p>
     </footer>
+
+    <script>
+        // JavaScript to handle expand/collapse functionality
+        const jobHeaders = document.querySelectorAll('.job-header');
+
+        jobHeaders.forEach(header => {
+            header.addEventListener('click', function () {
+                const details = this.nextElementSibling;
+                const icon = this.querySelector('i');
+
+                if (details.style.display === 'block') {
+                    details.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    details.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
+
+                
