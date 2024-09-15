@@ -1,85 +1,196 @@
-<header>
-    <div class="header-container">
-        <div class="text-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+
+    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Dark Purple-themed CSS Styling -->
+    <style>
+        /* Resetting default styles for a clean look */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Container for main content */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        /* Header section */
+        .header-container {
+            text-align: center;
+            padding: 30px;
+            background-color: #4B0082; /* Dark Purple */
+            color: white;
+            border-bottom: 5px solid #6A1B9A; /* Lighter purple border */
+        }
+
+        .name {
+            font-size: 3em;
+            font-weight: bold;
+        }
+
+        .email-section {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        .email-section a {
+            color: white; /* White for contrast */
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 15px;
+            background-color: #6A1B9A; /* Lighter purple */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Email hover effect */
+        .email-section a:hover {
+            background-color: #4B0082; /* Dark purple on hover */
+        }
+
+        /* Headline styling */
+        h2 {
+            color: #4B0082; /* Dark Purple */
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4B0082; /* Dark Purple underline */
+            padding-bottom: 10px;
+        }
+
+        /* Expanding sections */
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f9f9f9;
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-bottom: 5px;
+        }
+
+        .job-header:hover {
+            background-color: #e2e2e2;
+        }
+
+        .job-header h3 {
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        .job-details {
+            display: none; /* Initially hidden */
+            padding: 15px;
+            border-left: 3px solid #4B0082; /* Dark Purple */
+            margin-left: 20px;
+            margin-top: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+
+        .job-header i {
+            transition: transform 0.3s ease;
+        }
+
+        /* Rotate the icon when section is expanded */
+        .fa-chevron-up {
+            transform: rotate(180deg);
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4B0082; /* Dark Purple */
+            color: white;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #4B0082; /* Dark Purple for links */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
             <h1 class="name">Dalia Alfaghal</h1>
             <p class="email-section">Email: <a href="mailto:dalia.alfaghal@gmail.com">dalia.alfaghal@gmail.com</a></p>
         </div>
-    </div>
-</header>
+    </header>
 
-<style>
-    /* Flexbox to align the name and email */
-    .header-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        background-color: #f4f4f4; /* Light background for the header */
-    }
-
-    /* Styling for the name */
-    .name {
-        font-size: 2.5em;
-        font-weight: bold;
-        color: #6A1B9A; /* Purple color for the name */
-        margin-bottom: 10px;
-    }
-
-    /* Email section styling */
-    .email-section {
-        font-size: 1.2em;
-        color: #333;
-    }
-
-    /* Styling the email link */
-    .email-section a {
-        color: #6A1B9A; /* Purple color for the email */
-        text-decoration: none;
-        font-weight: bold;
-        padding: 5px 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-        background-color: #f0f0f0; /* Light background for email link */
-    }
-
-    /* Email hover effect */
-    .email-section a:hover {
-        background-color: #6A1B9A; /* Hover background color */
-        color: white; /* White text on hover */
-    }
-</style>
-<body>
-    <header>
-    <h1>Dalia Alfaghal</h1>
-    <p>AI Program Manager | Product Manager | Data Strategist</p>
-    <p class="email-section">Email: <a href="mailto:dalia.alfaghal@gmail.com">dalia.alfaghal@gmail.com</a></p>
-</header>
-
-<style>
-    /* Styling the email section for better clarity */
-    .email-section {
-        font-size: 1.5em; /* Increase font size for prominence */
-        margin-top: 10px;
-        font-weight: bold; /* Bold the email text */
-    }
-
-    .email-section a {
-        color: #4CAF50; /* Green to match the theme */
-        text-decoration: none; /* Remove underline */
-        background-color: #f1f1f1; /* Light background to make the email stand out */
-        padding: 5px 10px;
-        border-radius: 5px; /* Rounded corners for a button-like appearance */
-        display: inline-block;
-        transition: background-color 0.3s ease; /* Add hover transition */
-    }
-
-    .email-section a:hover {
-        background-color: #4CAF50; /* Hover effect */
-        color: white; /* White text on hover */
-    }
-</style>
     <div class="container">
+        <section>
+            <h2>Work Experience</h2>
+
+            <div class="job-header">
+                <h3>AI Program Manager - Mozilla Foundation (May 2024 - Present)</h3>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="job-details">
+                <ul>
+                    <li>Spearhead AI360 projects...</li>
+                    <li>Manage AI inventory...</li>
+                </ul>
+            </div>
+
+            <!-- Repeat for other job entries... -->
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Dalia Alfaghal | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const headers = document.querySelectorAll('.job-header');
+
+        headers.forEach(header => {
+            header.addEventListener('click', function () {
+                const details = this.nextElementSibling;
+                const icon = this.querySelector('i');
+
+                if (details.style.display === 'block') {
+                    details.style.display = 'none';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                } else {
+                    details.style.display = 'block';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
         <!-- About Me Section -->
         <section>
     <h2><i class="fas fa-user icon-section"></i>About Me</h2>
