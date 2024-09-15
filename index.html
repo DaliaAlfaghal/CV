@@ -3,21 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+    <title>CV - Dalia Alfaghal</title>
 
     <!-- Link to FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- Dark Purple-themed CSS Styling -->
     <style>
-        /* Resetting default styles for a clean look */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Body styling */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
@@ -25,7 +23,6 @@
             line-height: 1.6;
         }
 
-        /* Container for main content */
         .container {
             max-width: 900px;
             margin: 40px auto;
@@ -35,13 +32,12 @@
             border-radius: 10px;
         }
 
-        /* Header section */
         .header-container {
             text-align: center;
             padding: 30px;
-            background-color: #4B0082; /* Dark Purple */
+            background-color: #4B0082; 
             color: white;
-            border-bottom: 5px solid #6A1B9A; /* Lighter purple border */
+            border-bottom: 5px solid #6A1B9A;
         }
 
         .name {
@@ -55,29 +51,26 @@
         }
 
         .email-section a {
-            color: white; /* White for contrast */
+            color: white;
             text-decoration: none;
             font-weight: bold;
             padding: 5px 15px;
-            background-color: #6A1B9A; /* Lighter purple */
+            background-color: #6A1B9A;
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
 
-        /* Email hover effect */
         .email-section a:hover {
-            background-color: #4B0082; /* Dark purple on hover */
+            background-color: #4B0082;
         }
 
-        /* Headline styling */
         h2 {
-            color: #4B0082; /* Dark Purple */
+            color: #4B0082;
             margin-bottom: 20px;
-            border-bottom: 2px solid #4B0082; /* Dark Purple underline */
+            border-bottom: 2px solid #4B0082;
             padding-bottom: 10px;
         }
 
-        /* Expanding sections */
         .job-header {
             display: flex;
             justify-content: space-between;
@@ -99,9 +92,9 @@
         }
 
         .job-details {
-            display: none; /* Initially hidden */
+            display: none;
             padding: 15px;
-            border-left: 3px solid #4B0082; /* Dark Purple */
+            border-left: 3px solid #4B0082;
             margin-left: 20px;
             margin-top: 10px;
             background-color: #f0f0f0;
@@ -112,28 +105,35 @@
             transition: transform 0.3s ease;
         }
 
-        /* Rotate the icon when section is expanded */
         .fa-chevron-up {
             transform: rotate(180deg);
         }
 
-        /* Footer styling */
         footer {
             text-align: center;
             padding: 20px;
-            background-color: #4B0082; /* Dark Purple */
+            background-color: #4B0082;
             color: white;
             border-radius: 10px;
             margin-top: 40px;
         }
 
         a {
-            color: #4B0082; /* Dark Purple for links */
+            color: #4B0082;
             text-decoration: none;
         }
 
         a:hover {
             text-decoration: underline;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -147,57 +147,14 @@
     </header>
 
     <div class="container">
-        <section>
-            <h2>Work Experience</h2>
-
-            <div class="job-header">
-                <h3>AI Program Manager - Mozilla Foundation (May 2024 - Present)</h3>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="job-details">
-                <ul>
-                    <li>Spearhead AI360 projects...</li>
-                    <li>Manage AI inventory...</li>
-                </ul>
-            </div>
-
-            <!-- Repeat for other job entries... -->
-        </section>
-    </div>
-
-    <footer>
-        <p>© 2024 Dalia Alfaghal | All Rights Reserved</p>
-    </footer>
-
-    <script>
-        const headers = document.querySelectorAll('.job-header');
-
-        headers.forEach(header => {
-            header.addEventListener('click', function () {
-                const details = this.nextElementSibling;
-                const icon = this.querySelector('i');
-
-                if (details.style.display === 'block') {
-                    details.style.display = 'none';
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                } else {
-                    details.style.display = 'block';
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-up');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
         <!-- About Me Section -->
         <section>
-    <h2><i class="fas fa-user icon-section"></i>About Me</h2>
-    <p>I’m an emerging <strong>AI Program Manager</strong>, <strong>Product Manager</strong>, and <strong>Data Strategist</strong> with a strong passion for <strong>AI project management</strong> and <strong>data-driven innovation</strong>. Currently, I’m leading <strong>AI360 projects</strong> at Mozilla Foundation, where I’m diving deep into the AI landscape and working to create impactful, ethical AI initiatives.</p>
-    <p>I bring extensive experience from <strong>product development</strong> roles at companies like <strong>Doktor.se</strong> and <strong>Culcha</strong>, and from building global developer communities at <strong>Facebook</strong>. My MBA in <strong>Digital Data Strategy</strong> from <strong>Hyper Island</strong> and my commitment to continuous learning drive my enthusiasm for advancing in the AI space and delivering innovative, user-centered solutions.</p>
-</section>
-      <section>
+            <h2>About Me</h2>
+            <p>I am an emerging <strong>AI Program Manager</strong>, <strong>Product Manager</strong>, and <strong>Data Strategist</strong> with a strong passion for <strong>AI project management</strong> and <strong>data-driven innovation</strong>. Currently, I’m leading <strong>AI360 projects</strong> at Mozilla Foundation, diving deep into the AI landscape and working to create impactful, ethical AI initiatives.</p>
+            <p>I bring extensive experience from <strong>product development</strong> roles at companies like <strong>Doktor.se</strong> and <strong>Culcha</strong>, and from building global developer communities at <strong>Facebook</strong>. My MBA in <strong>Digital Data Strategy</strong> from <strong>Hyper Island</strong> and my commitment to continuous learning drive my enthusiasm for advancing in the AI space and delivering innovative, user-centered solutions.</p>
+        </section>
+<!-- Work Experience Section -->
+<section>
     <h2>Work Experience</h2>
 
     <!-- AI Program Manager - Mozilla Foundation -->
@@ -205,13 +162,14 @@
         <h3>AI Program Manager - Mozilla Foundation (May 2024 - Present)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
             <li>Spearhead the planning, design, and execution of AI360 projects, ensuring alignment with organizational priorities.</li>
-            <li>Manage the AI inventory and database to enhance team collaboration and project tracking.</li>
-            <li>Coordinate activities across the AI360 portfolio and develop systems to track and evaluate program impact.</li>
+            <li>Manage the AI inventory and database, creating efficient data flows to enhance team collaboration and project tracking.</li>
+            <li>Coordinate activities across the AI360 portfolio, developing systems to track and evaluate program impact.</li>
             <li>Organize public events and build partnerships to foster a trustworthy AI community.</li>
-            <li>Oversee budget expenditures across projects, ensuring alignment with Mozilla's strategic objectives.</li>
+            <li>Collaborate with external partners and internal teams, driving momentum for AI360 initiatives.</li>
+            <li>Oversee budget expenditures across projects, ensuring alignment with Mozilla policies and strategic objectives.</li>
         </ul>
     </div>
 
@@ -220,13 +178,15 @@
         <h3>Product Manager - Culcha (Nov 2021 - Jan 2023)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
-            <li>Define the product vision and roadmap for leadership education programs.</li>
-            <li>Conduct in-depth research to identify industry trends, customer needs, and competitive landscape.</li>
-            <li>Collaborate with subject matter experts to design and develop leadership education curricula.</li>
-            <li>Work closely with marketing, sales, and technical teams to ensure seamless product launches.</li>
-            <li>Gather and analyze customer feedback to continually improve product offerings.</li>
+            <li>Defined the product vision and roadmap for leadership education programs.</li>
+            <li>Conducted in-depth research to identify industry trends, customer needs, and competitive landscape.</li>
+            <li>Collaborated with subject matter experts to design and develop leadership education curricula.</li>
+            <li>Worked closely with marketing, sales, and technical teams to ensure seamless product launches.</li>
+            <li>Gathered and analyzed customer feedback to improve product offerings and address pain points.</li>
+            <li>Oversaw the entire product lifecycle from ideation to launch, ensuring timely delivery and high-quality standards.</li>
+            <li>Developed performance metrics to track the success of leadership programs.</li>
         </ul>
     </div>
 
@@ -235,11 +195,12 @@
         <h3>Product Consultant - Self-Employed (Feb 2021 - Present)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
-            <li>Designed and implemented new products for clients, including one of the world’s largest furniture retailers.</li>
-            <li>Developed product strategies that led to significant revenue growth.</li>
-            <li>Provided Agile and Scrum coaching to enhance team performance.</li>
+            <li>Designed and implemented a new product for one of the world’s largest furniture retailers, resulting in a 2% increase in market share.</li>
+            <li>Developed and executed product strategies that increased annual revenue by using OKRs and KPIs.</li>
+            <li>Provided Agile and Scrum coaching to reorganize teams for optimal performance.</li>
+            <li>Collaborated with cross-functional teams to enhance product design, increasing customer engagement by 20%.</li>
         </ul>
     </div>
 
@@ -248,11 +209,11 @@
         <h3>Product Manager - Betao (Feb 2020 - Feb 2021)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
-            <li>Led product vision and strategy, increasing customer engagement and annual recurring revenue.</li>
-            <li>Defined product requirements and worked with engineering teams to deliver high-quality products on time.</li>
-            <li>Established criteria for measuring product development progress.</li>
+            <li>Led the development and execution of the product vision and strategy, resulting in a 20% increase in customer engagement.</li>
+            <li>Defined product requirements and worked closely with engineering teams to deliver high-quality products on time and within budget.</li>
+            <li>Established criteria to measure developmental progress across product roadmaps.</li>
         </ul>
     </div>
 
@@ -261,10 +222,11 @@
         <h3>Community Lead - Facebook (Meta) (Jun 2019 - Feb 2020)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
-            <li>Engaged the developer community through workshops, events, and outreach.</li>
-            <li>Created and organized workshops on web development and machine learning.</li>
+            <li>Engaged the developer community through workshops on web development, machine learning, and quantum computing.</li>
+            <li>Organized events and networked with industry leaders to enhance community connections.</li>
+            <li>Expanded community engagement, reaching over 3,000 developers through online and offline channels.</li>
         </ul>
     </div>
 
@@ -273,10 +235,10 @@
         <h3>Growth Hacker - Doktor.se (Oct 2018 - Jun 2020)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
-            <li>Increased website traffic and revenue through marketing tactics like A/B testing and SEO.</li>
-            <li>Generated over 1,000,000 Kr. in revenue using digital marketing channels.</li>
+            <li>Increased website traffic by 20% through A/B testing, SEO, and social media campaigns.</li>
+            <li>Generated over 1,000,000 Kr. in revenue using digital marketing channels such as paid search and retargeting.</li>
         </ul>
     </div>
 
@@ -285,10 +247,11 @@
         <h3>Product Development Manager - SAP (Cloud Platform) (Jun 2017 - Dec 2017)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
-            <li>Developed and executed go-to-market strategies for SAP's cloud platform products.</li>
-            <li>Launched networking projects that became integral to SAP Cloud Operations.</li>
+            <li>Developed and executed go-to-market plans for SAP's cloud platform products.</li>
+            <li>Launched networking projects integral to SAP Cloud Operations.</li>
+            <li>Analyzed consumer data to develop strategic insights for product launches.</li>
         </ul>
     </div>
 
@@ -297,10 +260,11 @@
         <h3>Data Analyst - SAP (Co-Innovation Lab) (Jan 2016 - May 2017)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
-            <li>Reviewed and analyzed 10 years of project data, identifying key trends and opportunities.</li>
-            <li>Developed and presented proposals for new product initiatives based on market research.</li>
+            <li>Reviewed 10 years’ worth of data and identified key trends and opportunities.</li>
+            <li>Analyzed and visualized data to uncover insights for project development.</li>
+            <li>Initiated market research and developed proposals based on findings.</li>
         </ul>
     </div>
 
@@ -309,98 +273,112 @@
         <h3>Data Analyst Intern - Daresay (Sept 2016 - Nov 2016)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
+    <div class="job-details">
         <ul>
-            <li>Managed Google Analytics to identify areas for improvement.</li>
-            <li>Improved data accuracy and visualization in analytics settings.</li>
+            <li>Managed Google Analytics to identify areas for improvement and enhanced data accuracy.</li>
+            <li>Contributed to the development of Screen Interaction’s business transformation strategy.</li>
         </ul>
     </div>
 </section>
 
+     <!-- Education Section -->
 <section>
     <h2>Education</h2>
 
-    <!-- MBA: Digital Data Strategist - Hyper Island -->
+    <!-- AI Product Management -->
     <div class="job-header">
-        <h3>MBA: Digital Data Strategist - Hyper Island (2015 - 2017)</h3>
+        <h3>AI Product Management - Duke University (Jan 2023 - Apr 2023)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
-        <p>Hyper Island is a renowned digital creative business school known for its hands-on approach to education. The MBA program at Hyper Island focuses on leadership, data strategy, and digital transformation, helping students develop skills in business innovation, strategy, and managing digital change.</p>
+    <div class="job-details">
+        <p>Gained expertise in managing the lifecycle of AI products, from development to implementation.</p>
     </div>
 
-    <!-- Bachelor's Degree: Cairo University -->
+    <!-- Machine Learning Project Management -->
     <div class="job-header">
-        <h3>Bachelor's Degree in Physics of Telecommunications - Cairo University (2006 - 2010)</h3>
+        <h3>Machine Learning Project Management - Duke University (Jan 2023 - Mar 2023)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
-        <p>Developed foundational knowledge in telecommunications and data analysis techniques.</p>
+    <div class="job-details">
+        <p>Learned how to manage machine learning projects from inception to deployment, focusing on team coordination and deliverable timelines.</p>
     </div>
 
-    <!-- Duke University Courses -->
+    <!-- Human Factors in AI -->
     <div class="job-header">
-        <h3>Machine Learning Foundation - Duke University (2023)</h3>
+        <h3>Human Factors in AI - Duke University (Jan 2023 - Mar 2023)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
-        <p>Completed coursework in machine learning and AI fundamentals.</p>
+    <div class="job-details">
+        <p>Explored human-centered design principles in AI system development.</p>
     </div>
 
+    <!-- Machine Learning Foundation -->
     <div class="job-header">
-        <h3>Human Factors in AI - Duke University (2023)</h3>
+        <h3>Machine Learning Foundation - Duke University (Jan 2023 - Mar 2023)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
-        <p>Studied human-centered design principles in AI systems development.</p>
+    <div class="job-details">
+        <p>Focused on fundamental machine learning algorithms and their applications in real-world problems.</p>
     </div>
 
+    <!-- CS50 Web Development with Python and JavaScript -->
     <div class="job-header">
-        <h3>AI Product Management - Duke University (2023)</h3>
+        <h3>CS50: Web Development with Python and JavaScript - Harvard University (Jun 2022 - Dec 2022)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
-        <p>Gained expertise in managing the product lifecycle for AI technologies.</p>
+    <div class="job-details">
+        <p>Studied advanced web development using Python and JavaScript, focusing on back-end and front-end integration.</p>
     </div>
 
-    <!-- Harvard CS50 Course -->
+    <!-- SAP Business Tools -->
     <div class="job-header">
-        <h3>CS50: Web Development with Python and JavaScript - Harvard University (2022)</h3>
+        <h3>SAP Business Tools (Lumira, ERP, Leonardo IoT, SuccessFactor) - SAP Internal Education (Dec 2016 - Mar 2017)</h3>
         <i class="fas fa-chevron-down"></i>
     </div>
-    <div class="job-details" style="display: none;">
-        <p>Completed advanced coursework in web development, focusing on Python and JavaScript.</p>
+    <div class="job-details">
+        <p>Trained in various SAP tools, gaining insights into ERP systems, IoT, and data management strategies.</p>
+    </div>
+
+    <!-- MBA: Executive Degree in Digital Data Strategist -->
+    <div class="job-header">
+        <h3>MBA: Executive Degree in Digital Data Strategist - Hyper Island (Aug 2015 - May 2017)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Completed an executive MBA program focused on leadership, data strategy, and digital transformation, equipping students to lead in digital industries.</p>
+    </div>
+
+    <!-- Growth Hacking Crash Course -->
+    <div class="job-header">
+        <h3>Growth Hacking Crash Course - Growth Tribe (Nov 2018)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Acquired skills in growth hacking, focusing on marketing techniques that generate rapid business growth through analytics and user feedback.</p>
+    </div>
+
+    <!-- Adobe Animation CC for Web Designers -->
+    <div class="job-header">
+        <h3>Adobe Animation CC for Web Designers - Lynda.com (Jun 2016 - Aug 2016)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Learned advanced web design animation techniques using Adobe tools, with a focus on interactive UI design.</p>
+    </div>
+
+    <!-- Bachelor's Degree in Physics of Telecommunications -->
+    <div class="job-header">
+        <h3>Bachelor's Degree in Physics of Telecommunications - Cairo University (Aug 2006 - Jan 2010)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Earned a degree in telecommunications, learning about signal processing, telecommunication systems, and data science foundations.</p>
     </div>
 </section>
- <script>
-    // Select all elements with the class 'job-header' (both in work experience and education)
-    const headers = document.querySelectorAll('.job-header');
 
-    // Loop through each header and add an event listener for click events
-    headers.forEach(header => {
-        header.addEventListener('click', function () {
-            const details = this.nextElementSibling; // The next sibling element which contains the details (job-details)
-            const icon = this.querySelector('i'); // The icon within the header to toggle the chevron icon
-
-            // Toggle the visibility of the details section
-            if (details.style.display === 'block' || details.style.display === '') {
-                details.style.display = 'none'; // Collapse the section
-                icon.classList.remove('fa-chevron-up'); // Change icon to down chevron
-                icon.classList.add('fa-chevron-down');
-            } else {
-                details.style.display = 'block'; // Expand the section
-                icon.classList.remove('fa-chevron-down'); // Change icon to up chevron
-                icon.classList.add('fa-chevron-up');
-            }
-        });
-    });
-</script>
-    
-
-
-<!-- Digital Skills Section -->
+        <!-- Digital Skills Section -->
 <section class="skills">
-    <h2><i class="fas fa-laptop-code icon-section"></i>Digital Skills</h2>
+    <h2>Digital Skills</h2>
 
     <!-- AI and Data Science -->
     <div class="job-header">
@@ -459,7 +437,7 @@
         <ul>
             <li>Big Data & Cloud Technologies</li>
             <li>SAP ERP</li>
-            <li>SAP C/4HANA (Cloud CRM)</li> <!-- For SAP C/4HANA Cloud CRM -->
+            <li>SAP C/4HANA (Cloud CRM)</li>
             <li>Data Protection and GDPR</li>
         </ul>
     </div>
@@ -485,23 +463,38 @@
     <div class="job-details">
         <ul>
             <li>Salesforce (Beginner)</li>
-            <li>SAP CRM (On-Premise)</li> <!-- For SAP CRM On-Premise -->
+            <li>SAP CRM (On-Premise)</li>
             <li>Airtable (Super User)</li>
         </ul>
     </div>
 </section>
 
+<!-- Languages Section -->
+<section>
+    <h2>Languages</h2>
+    <ul>
+        <li>Arabic (Native)</li>
+        <li>English (Proficient)</li>
+        <li>Swedish (Intermediate)</li>
+        <li>Italian (Basic)</li>
+    </ul>
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>© 2024 Dalia Alfaghal | All Rights Reserved</p>
+</footer>
+
 <script>
     // JavaScript to handle expand/collapse functionality for the digital skills section
-    const skillHeaders = document.querySelectorAll('.job-header');
+    const jobHeaders = document.querySelectorAll('.job-header');
 
-    skillHeaders.forEach(header => {
+    jobHeaders.forEach(header => {
         header.addEventListener('click', function () {
             const details = this.nextElementSibling;
             const icon = this.querySelector('i');
 
-            // Toggle the display of the skill details
-            if (details.style.display === 'block' || details.style.display === '') {
+            if (details.style.display === 'block') {
                 details.style.display = 'none';
                 icon.classList.remove('fa-chevron-up');
                 icon.classList.add('fa-chevron-down');
@@ -513,46 +506,3 @@
         });
     });
 </script>
-
-        <!-- Languages Section -->
-        <section>
-            <h2><i class="fas fa-language icon-section"></i>Languages</h2>
-            <ul>
-                <li>Arabic (Native)</li>
-                <li>English (Proficient)</li>
-                <li>Swedish (Intermediate)</li>
-                <li>Italian (Basic)</li>
-            </ul>
-        </section>
-    </div>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>© 2024 Dalia Alfaghal | All Rights Reserved</p>
-    </footer>
-
-    <script>
-        // JavaScript to handle expand/collapse functionality
-        const jobHeaders = document.querySelectorAll('.job-header');
-
-        jobHeaders.forEach(header => {
-            header.addEventListener('click', function () {
-                const details = this.nextElementSibling;
-                const icon = this.querySelector('i');
-
-                if (details.style.display === 'block') {
-                    details.style.display = 'none';
-                    icon.classList.remove('fa-chevron-up');
-                    icon.classList.add('fa-chevron-down');
-                } else {
-                    details.style.display = 'block';
-                    icon.classList.remove('fa-chevron-down');
-                    icon.classList.add('fa-chevron-up');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
-
-                
