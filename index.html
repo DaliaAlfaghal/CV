@@ -9,139 +9,151 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <style>
-        /* Resetting margin and padding */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    /* Resetting margin and padding */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        /* Body styling */
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
+    /* Body styling */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+    }
 
-        /* Header section */
-        header {
-            background: linear-gradient(to right, #4CAF50, #3E8E41);
-            color: white;
-            text-align: center;
-            padding: 40px 20px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
+    /* Header section */
+    header {
+        background: linear-gradient(to right, #4CAF50, #3E8E41);
+        color: white;
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-        header h1 {
-            font-size: 3.2em;
-            margin-bottom: 10px;
-        }
+    header h1 {
+        font-size: 3.2em;
+        margin-bottom: 10px;
+    }
 
-        header p {
-            font-size: 1.2em;
-        }
+    header p {
+        font-size: 1.2em;
+    }
 
-        /* Email styling */
-        header a {
-            color: white;
-            font-size: 1.2em;
-            text-decoration: underline;
-        }
+    /* Container for main content */
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background-color: #fff;
+        padding: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
 
-        /* Container for main content */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+    h2 {
+        color: #4CAF50;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #4CAF50;
+        padding-bottom: 5px;
+        font-weight: 500;
+    }
 
-        h2 {
-            color: #4CAF50;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 5px;
-            font-weight: 500;
-        }
+    h3 {
+        color: #333;
+        margin-top: 20px;
+        font-weight: 500;
+    }
 
-        h3 {
-            color: #333;
-            margin-top: 20px;
-            font-weight: 500;
-        }
+    p, ul {
+        margin-bottom: 20px;
+    }
 
-        p, ul {
-            margin-bottom: 20px;
-        }
+    ul {
+        margin-left: 20px;
+    }
 
-        ul {
-            margin-left: 20px;
-        }
+    /* Expanding sections */
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f4f4f4;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
 
-        /* Expanding sections */
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            background-color: #f4f4f4;
-            padding: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
+    .job-header:hover {
+        background-color: #e2e2e2;
+    }
 
-        .job-header:hover {
-            background-color: #e2e2e2;
-        }
+    .job-details {
+        display: none; /* Ensures it's hidden initially */
+        padding: 10px;
+        border-left: 2px solid #4CAF50;
+        margin-left: 10px;
+    }
 
-        .job-details {
-            display: none;
-            padding: 10px;
-            border-left: 2px solid #4CAF50;
-            margin-left: 10px;
-            animation: slide-down 0.3s ease;
-        }
+    /* To ensure proper expand/collapse on mobile */
+    .job-header i {
+        transition: transform 0.3s ease;
+    }
 
-        @keyframes slide-down {
-            from {
-                height: 0;
-                opacity: 0;
+    .fa-chevron-up {
+        transform: rotate(180deg);
+    }
+
+    /* Footer section */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #4CAF50;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Links */
+    a {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .icon-section {
+        margin-right: 10px;
+        color: #4CAF50;
+    }
+</style>
+
+<script>
+    // JavaScript to handle expand/collapse functionality for mobile and desktop
+    const jobHeaders = document.querySelectorAll('.job-header');
+
+    jobHeaders.forEach(header => {
+        header.addEventListener('click', function () {
+            const details = this.nextElementSibling;
+            const icon = this.querySelector('i');
+
+            // Toggle the display of the job details
+            if (details.style.display === 'block' || details.style.display === '') {
+                details.style.display = 'none';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                details.style.display = 'block';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
             }
-            to {
-                height: auto;
-                opacity: 1;
-            }
-        }
-
-        /* Footer section */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #4CAF50;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-
-        /* Links */
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        .icon-section {
-            margin-right: 10px;
-            color: #4CAF50;
-        }
-
-    </style>
+        });
+    });
+</script>
 </head>
 <body>
     <header>
