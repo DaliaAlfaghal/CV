@@ -282,15 +282,83 @@
         </section>
 
         <!-- Education Section -->
-        <section>
-            <h2><i class="fas fa-graduation-cap icon-section"></i>Education</h2>
-            <h3>MBA: Digital Data Strategist - Hyper Island (2015 - 2017)</h3>
-            <p>Focused on data strategy, business transformation, and innovation.</p>
+<section>
+    <h2><i class="fas fa-graduation-cap icon-section"></i>Education</h2>
+    
+    <!-- MBA: Hyper Island -->
+    <div class="job-header">
+        <h3>MBA: Digital Data Strategist - Hyper Island (2015 - 2017)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Focused on data strategy, business transformation, and innovation.</p>
+    </div>
 
-            <h3>Bachelor's Degree in Physics of Telecommunications - Cairo University (2006 - 2010)</h3>
-            <p>Developed skills in telecommunications and data analysis techniques.</p>
-        </section>
+    <!-- Bachelor's Degree: Cairo University -->
+    <div class="job-header">
+        <h3>Bachelor's Degree in Physics of Telecommunications - Cairo University (2006 - 2010)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Developed skills in telecommunications and data analysis techniques.</p>
+    </div>
 
+    <!-- Duke University Courses -->
+    <div class="job-header">
+        <h3>Machine Learning Foundation - Duke University (2023)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Completed foundation coursework in Machine Learning.</p>
+    </div>
+
+    <div class="job-header">
+        <h3>Human Factors in AI - Duke University (2023)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Focused on the intersection of AI and human-centered design.</p>
+    </div>
+
+    <div class="job-header">
+        <h3>AI Product Management - Duke University (2023)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Gained expertise in managing AI product life cycles.</p>
+    </div>
+
+    <!-- Harvard CS50 Course -->
+    <div class="job-header">
+        <h3>CS50: Web Development with Python and JavaScript - Harvard University (2022)</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <p>Completed advanced coursework in web development, focusing on Python and JavaScript.</p>
+    </div>
+</section>
+
+<script>
+    // JavaScript to handle expand/collapse functionality for the education section
+    const eduHeaders = document.querySelectorAll('.job-header');
+
+    eduHeaders.forEach(header => {
+        header.addEventListener('click', function () {
+            const details = this.nextElementSibling;
+            const icon = this.querySelector('i');
+
+            if (details.style.display === 'block') {
+                details.style.display = 'none';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                details.style.display = 'block';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        });
+    });
+</script>
         <!-- Digital Skills Section -->
         <section class="skills">
             <h2><i class="fas fa-laptop-code icon-section"></i>Digital Skills</h2>
