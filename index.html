@@ -8,134 +8,152 @@
     <!-- Link to FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-    <!-- Dark Purple-themed CSS Styling -->
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<!-- CSS Styling for the Entire Page -->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
+    /* Body styling */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+    }
 
+    /* Container styling */
+    .container {
+        max-width: 900px;
+        margin: 40px auto;
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    /* Header container */
+    .header-container {
+        text-align: center;
+        padding: 40px 20px; /* Top and bottom padding increased for better balance */
+        background-color: #4B0082; /* Dark Purple */
+        color: white;
+    }
+
+    /* Name styling */
+    .name {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 15px; /* Adds space between name and contact info */
+    }
+
+    /* Email section styling */
+    .email-section {
+        font-size: 1em; /* Reduced font size for contact info */
+        margin-top: 10px;
+    }
+
+    .email-section a {
+        color: white;
+        text-decoration: none;
+        padding: 5px 15px; /* Adds padding around links for better clickability */
+        transition: background-color 0.3s ease;
+    }
+
+    .email-section a:hover {
+        background-color: #6A1B9A; /* Subtle hover effect for links */
+        border-radius: 5px;
+    }
+
+    /* Section headings */
+    h2 {
+        font-size: 1.8em;
+        color: #4B0082; /* Dark Purple */
+        margin-bottom: 20px;
+        border-bottom: 2px solid #4B0082;
+        padding-bottom: 10px;
+    }
+
+    /* Job and education sections */
+    .job-header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #f9f9f9;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-bottom: 10px; /* More space between job headers */
+        transition: background-color 0.3s ease;
+    }
+
+    .job-header:hover {
+        background-color: #e2e2e2;
+    }
+
+    .job-header h3 {
+        font-size: 1.3em;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .job-details {
+        display: none;
+        padding: 15px;
+        margin-top: 10px;
+        border-left: 3px solid #4B0082; /* Purple border for job details */
+        background-color: #f7f7f7;
+        border-radius: 5px;
+    }
+
+    /* Footer styling */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #4B0082; /* Dark Purple */
+        color: white;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+
+    a {
+        color: #4B0082; /* Dark Purple for links */
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    /* For mobile responsiveness */
+    @media (max-width: 768px) {
         .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            padding: 20px;
         }
 
         .header-container {
-            text-align: center;
-            padding: 30px;
-            background-color: #4B0082; 
-            color: white;
-            border-bottom: 5px solid #6A1B9A;
+            padding: 30px 10px;
         }
 
         .name {
-            font-size: 3em;
-            font-weight: bold;
-        }
-
-        .email-section {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-
-        .email-section a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 5px 15px;
-            background-color: #6A1B9A;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .email-section a:hover {
-            background-color: #4B0082;
+            font-size: 2em;
         }
 
         h2 {
-            color: #4B0082;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #4B0082;
-            padding-bottom: 10px;
-        }
-
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            background-color: #f9f9f9;
-            padding: 15px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin-bottom: 5px;
-        }
-
-        .job-header:hover {
-            background-color: #e2e2e2;
+            font-size: 1.5em;
         }
 
         .job-header h3 {
-            font-size: 1.3em;
-            font-weight: 500;
+            font-size: 1.1em;
         }
 
-        .job-details {
-            display: none;
-            padding: 15px;
-            border-left: 3px solid #4B0082;
-            margin-left: 20px;
-            margin-top: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
+        .email-section a {
+            padding: 5px 10px;
         }
-
-        .job-header i {
-            transition: transform 0.3s ease;
-        }
-
-        .fa-chevron-up {
-            transform: rotate(180deg);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #4B0082;
-            color: white;
-            border-radius: 10px;
-            margin-top: 40px;
-        }
-
-        a {
-            color: #4B0082;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        ul li {
-            margin-bottom: 10px;
-        }
-    </style>
+    }
+</style>
 </head>
 
 <body>
