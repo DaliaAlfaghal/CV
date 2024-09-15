@@ -1,107 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV</title>
+<header>
+    <div class="header-container">
+        <div class="text-container">
+            <h1 class="name">Dalia Alfaghal</h1>
+            <p class="email-section">Email: <a href="mailto:dalia.alfaghal@gmail.com">dalia.alfaghal@gmail.com</a></p>
+        </div>
+    </div>
+</header>
 
-    <!-- Link to FontAwesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
-    <!-- Purple-themed CSS Styling -->
-    <style>
-        /* Resetting default styles for a clean look */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<style>
+    /* Flexbox to align the name and email */
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        background-color: #f4f4f4; /* Light background for the header */
+    }
 
-        /* Body styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-        }
+    /* Styling for the name */
+    .name {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #6A1B9A; /* Purple color for the name */
+        margin-bottom: 10px;
+    }
 
-        /* Container for main content */
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            background-color: #fff;
-            padding: 30px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+    /* Email section styling */
+    .email-section {
+        font-size: 1.2em;
+        color: #333;
+    }
 
-        h2 {
-            color: #6A1B9A; /* Purple */
-            margin-bottom: 10px;
-            border-bottom: 2px solid #6A1B9A; /* Purple */
-            padding-bottom: 5px;
-        }
+    /* Styling the email link */
+    .email-section a {
+        color: #6A1B9A; /* Purple color for the email */
+        text-decoration: none;
+        font-weight: bold;
+        padding: 5px 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        background-color: #f0f0f0; /* Light background for email link */
+    }
 
-        /* Expanding sections */
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            background-color: #f9f9f9;
-            padding: 15px;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            margin-bottom: 5px;
-        }
-
-        .job-header:hover {
-            background-color: #e2e2e2;
-        }
-
-        .job-header h3 {
-            font-size: 1.3em;
-            font-weight: 500;
-        }
-
-        .job-details {
-            display: none; /* Initially hidden */
-            padding: 15px;
-            border-left: 3px solid #6A1B9A; /* Purple border */
-            margin-left: 20px;
-            margin-top: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-        }
-
-        .job-header i {
-            transition: transform 0.3s ease;
-        }
-
-        /* Rotate the icon when section is expanded */
-        .fa-chevron-up {
-            transform: rotate(180deg);
-        }
-
-        /* Footer styling */
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #6A1B9A; /* Purple */
-            color: white;
-            border-radius: 10px;
-            margin-top: 40px;
-        }
-
-        a {
-            color: #6A1B9A; /* Purple */
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
+    /* Email hover effect */
+    .email-section a:hover {
+        background-color: #6A1B9A; /* Hover background color */
+        color: white; /* White text on hover */
+    }
+</style>
 <body>
     <header>
     <h1>Dalia Alfaghal</h1>
