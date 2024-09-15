@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dalia Alfaghal - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        p {
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dalia Alfaghal</h1>
+        <p>AI Program Manager | Product Manager | Data Strategist</p>
+    </header>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>Email: <a href="mailto:dalia.alfaghal@gmail.com">dalia.alfaghal@gmail.com</a></p>
+            <p>Date of Birth: 25/01/1990</p>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            <h3>AI Program Manager - Mozilla Foundation (May 2024 - Present)</h3>
+            <ul>
+                <li>Leading AI360 initiatives, driving AI projects.</li>
+                <li>Managing the AI inventory and database to enhance collaboration.</li>
+                <!-- Add more points from your CV here -->
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <h3>MBA: Digital Data Strategist - Hyper Island (2015-2017)</h3>
+            <p>Bachelor's Degree in Physics of Telecommunications - Cairo University (2006-2010)</p>
+        </section>
+    </div>
+</body>
+</html>
