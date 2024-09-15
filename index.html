@@ -371,22 +371,119 @@
         });
     });
 </script>
-        <!-- Digital Skills Section -->
-        <section class="skills">
-            <h2><i class="fas fa-laptop-code icon-section"></i>Digital Skills</h2>
-            <ul>
-                <li>AI Product Management</li>
-                <li>Data Protection and GDPR</li>
-                <li>Python for Data Scientists</li>
-                <li>Google Analytics</li>
-                <li>Agile (Scrum), Jira, Kanban</li>
-                <li>SQL, REST APIs</li>
-                <li>Sketch, Figma</li>
-                <li>Machine Learning & AI Systems Design</li>
-                <li>Big Data & Cloud Technologies</li>
-                <li>Data Visualization Tools (Tableau, Power BI)</li>
-            </ul>
-        </section>
+       <!-- Digital Skills Section -->
+<section class="skills">
+    <h2><i class="fas fa-laptop-code icon-section"></i>Digital Skills</h2>
+
+    <!-- AI and Data Science -->
+    <div class="job-header">
+        <h3>AI and Data Science</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <ul>
+            <li>AI Product Management</li>
+            <li>Machine Learning & AI Systems Design</li>
+            <li>Python for Data Scientists</li>
+            <li>Big Data & Cloud Technologies</li>
+            <li>SAP Lumira</li>
+        </ul>
+    </div>
+
+    <!-- Project Management and Collaboration Tools -->
+    <div class="job-header">
+        <h3>Project Management and Collaboration Tools</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <ul>
+            <li>Airtable (Super User)</li>
+            <li>Confluence (Super User)</li>
+            <li>Notion (Super User)</li>
+            <li>Jira (Advanced)</li>
+            <li>Agile (Scrum), Kanban</li>
+            <li>Miro (Workflow Design)</li>
+            <li>Excel (Super User)</li>
+        </ul>
+    </div>
+
+    <!-- Cloud and Big Data Technologies -->
+    <div class="job-header">
+        <h3>Cloud and Big Data Technologies</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <ul>
+            <li>Big Data & Cloud Technologies</li>
+            <li>SQL, REST APIs</li>
+            <li>Data Protection and GDPR</li>
+        </ul>
+    </div>
+
+    <!-- Web and Application Development -->
+    <div class="job-header">
+        <h3>Web and Application Development</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <ul>
+            <li>Google Analytics</li>
+            <li>Sketch, Figma</li>
+            <li>CS50: Web Development with Python and JavaScript</li>
+        </ul>
+    </div>
+
+    <!-- Visualization and Design Tools -->
+    <div class="job-header">
+        <h3>Visualization and Design Tools</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <ul>
+            <li>Tableau (Advanced)</li>
+            <li>Power BI (Advanced)</li>
+            <li>SAP Lumira</li>
+            <li>Sketch, Figma</li>
+        </ul>
+    </div>
+
+    <!-- Customer Relationship Management (CRM) Platforms -->
+    <div class="job-header">
+        <h3>Customer Relationship Management (CRM) Platforms</h3>
+        <i class="fas fa-chevron-down"></i>
+    </div>
+    <div class="job-details">
+        <ul>
+            <li>Salesforce (Beginner)</li>
+            <li>SAP ERP</li>
+            <li>SAP CRM</li>
+            <li>Airtable (Super User)</li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    // JavaScript to handle expand/collapse functionality for the digital skills section
+    const skillHeaders = document.querySelectorAll('.job-header');
+
+    skillHeaders.forEach(header => {
+        header.addEventListener('click', function () {
+            const details = this.nextElementSibling;
+            const icon = this.querySelector('i');
+
+            // Toggle the display of the skill details
+            if (details.style.display === 'block' || details.style.display === '') {
+                details.style.display = 'none';
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                details.style.display = 'block';
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        });
+    });
+</script>
 
         <!-- Languages Section -->
         <section>
