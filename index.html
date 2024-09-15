@@ -4,47 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    
+
     <!-- Link to FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
-    <!-- CSS for Job and Education Section Styles -->
+    <!-- Purple-themed CSS Styling -->
     <style>
-        /* Resetting default styles for consistent look */
+        /* Resetting default styles for a clean look */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Ensuring job details are hidden initially */
-        .job-details {
-            display: none; /* Hidden by default */
-            padding: 10px;
-            border-left: 2px solid #4CAF50;
-            margin-left: 10px;
+        /* Body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
         }
 
-        /* Styling for the job header and icon */
+        /* Container for main content */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #fff;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #6A1B9A; /* Purple */
+            margin-bottom: 10px;
+            border-bottom: 2px solid #6A1B9A; /* Purple */
+            padding-bottom: 5px;
+        }
+
+        /* Expanding sections */
         .job-header {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            background-color: #f9f9f9;
+            padding: 15px;
             cursor: pointer;
-            background-color: #f4f4f4;
-            padding: 10px;
             border-radius: 5px;
             transition: background-color 0.3s ease;
             margin-bottom: 5px;
         }
 
         .job-header:hover {
-            background-color: #e2e2e2; /* Hover effect */
+            background-color: #e2e2e2;
         }
 
         .job-header h3 {
-            margin: 0;
-            font-size: 1.2em;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        .job-details {
+            display: none; /* Initially hidden */
+            padding: 15px;
+            border-left: 3px solid #6A1B9A; /* Purple border */
+            margin-left: 20px;
+            margin-top: 10px;
+            background-color: #f0f0f0;
+            border-radius: 5px;
         }
 
         .job-header i {
@@ -55,8 +81,26 @@
         .fa-chevron-up {
             transform: rotate(180deg);
         }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #6A1B9A; /* Purple */
+            color: white;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #6A1B9A; /* Purple */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-</head>
 </head>
 <body>
     <header>
