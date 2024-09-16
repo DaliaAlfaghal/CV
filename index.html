@@ -8,7 +8,10 @@
     <!-- Link to FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-<!-- CSS Styling for the Entire Page -->
+<!-- Link to FontAwesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Updated CSS Styling -->
 <style>
     * {
         margin: 0;
@@ -38,7 +41,7 @@
     /* Header container */
     .header-container {
         text-align: center;
-        padding: 40px 20px; /* Top and bottom padding increased for better balance */
+        padding: 40px 20px;
         background-color: #4B0082; /* Dark Purple */
         color: white;
     }
@@ -47,34 +50,61 @@
     .name {
         font-size: 2.5em;
         font-weight: bold;
-        margin-bottom: 15px; /* Adds space between name and contact info */
+        margin-bottom: 15px;
     }
 
     /* Email section styling */
     .email-section {
-        font-size: 1em; /* Reduced font size for contact info */
+        font-size: 1em;
         margin-top: 10px;
     }
 
     .email-section a {
         color: white;
         text-decoration: none;
-        padding: 5px 15px; /* Adds padding around links for better clickability */
+        padding: 5px 15px;
         transition: background-color 0.3s ease;
     }
 
     .email-section a:hover {
-        background-color: #6A1B9A; /* Subtle hover effect for links */
+        background-color: #6A1B9A;
         border-radius: 5px;
     }
 
-    /* Section headings */
+    /* Section headings with icons */
     h2 {
         font-size: 1.8em;
         color: #4B0082; /* Dark Purple */
         margin-bottom: 20px;
         border-bottom: 2px solid #4B0082;
         padding-bottom: 10px;
+        position: relative;
+    }
+
+    h2::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -50px;
+        font-family: 'FontAwesome';
+        font-size: 1.5em;
+    }
+
+    /* Icons for specific sections */
+    h2.work-experience::before {
+        content: '\f0b1'; /* Briefcase icon for Work Experience */
+    }
+
+    h2.education::before {
+        content: '\f19d'; /* Graduation Cap icon for Education */
+    }
+
+    h2.skills::before {
+        content: '\f121'; /* Laptop code icon for Digital Skills */
+    }
+
+    h2.languages::before {
+        content: '\f1ab'; /* Globe icon for Languages */
     }
 
     /* Job and education sections */
@@ -85,7 +115,7 @@
         padding: 15px;
         cursor: pointer;
         border-radius: 5px;
-        margin-bottom: 10px; /* More space between job headers */
+        margin-bottom: 10px;
         transition: background-color 0.3s ease;
     }
 
@@ -103,23 +133,45 @@
         display: none;
         padding: 15px;
         margin-top: 10px;
-        border-left: 3px solid #4B0082; /* Purple border for job details */
+        border-left: 3px solid #4B0082;
         background-color: #f7f7f7;
         border-radius: 5px;
+    }
+
+    /* Custom bullet points for job tasks */
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 25px; /* Space for bullet icon */
+    }
+
+    ul li::before {
+        content: '\f111'; /* FontAwesome small circle icon */
+        font-family: 'FontAwesome';
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #4B0082; /* Purple bullet */
+        font-size: 0.8em;
     }
 
     /* Footer styling */
     footer {
         text-align: center;
         padding: 20px;
-        background-color: #4B0082; /* Dark Purple */
+        background-color: #4B0082;
         color: white;
         border-radius: 10px;
         margin-top: 40px;
     }
 
     a {
-        color: #4B0082; /* Dark Purple for links */
+        color: #4B0082;
         text-decoration: none;
     }
 
@@ -127,7 +179,7 @@
         text-decoration: underline;
     }
 
-    /* For mobile responsiveness */
+    /* Mobile responsiveness */
     @media (max-width: 768px) {
         .container {
             padding: 20px;
